@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Picolé</title>
+    <style>
+        .botoes
+        {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+        }
+        button
+        {
+            color:red;
+            background-color: yellow;
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .botao {
+    border: 0;
+    border-radius: 1rem;
+    display: block;
+    height: 2.5rem;
+    width: 50%;
+    margin: 0.4rem;
+    background-color: lightslategrey;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+botao:hover
+        {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend> Dados do Picolezinho</legend>
+        <br> <br>
+        Descrição: 
+        <input type="text" class="caixa_larga" id="descricao">
+        <br> <br>
+        Digite o preço:
+        <input type="text" class="caixa_larga" id="preco">
+        <br> <br> 
+        Fornecedor do bagulho:
+        <input type="text" class="caixa_larga" id="fornecedor">
+        <br> <br>
+        Quantidade a desenrolar:
+        <input type="number" class="caixa_larga" id="quantidade">
+        <br> <br>
+        Data do pedido:
+        <input type="date" id="data_pedido">
+        <br> <br>
+    </fieldset>
+    <fieldset>
+        <legend>Sobre o sabor</legend>
+        <br> <br> 
+        Escolha somente um sabor seu nóia:
+        <br> <br> 
+        <input type="radio" id="pimenta" name="sabores">
+        Pimenta
+        <input type="radio" id="cenoura" name="sabores">
+        Cenoura
+        <input type="radio" id="adubo" name="sabores">
+        Adubo
+        <input type="radio" id="tomate" name="sabores">
+        Tomate
+        <br><br>
+        Selecione quais as cores da embalagem:
+        <br> <br>
+        <input type="checkbox" id="amarelo"> Amarelo
+        <input type="checkbox" id="verde"> Verde
+        <input type="checkbox" id="azul"> azul
+        <br><br>
+        Selecione o Estado para entrega:
+        <select id="estado">
+            <option>Bahia</option>
+            <option>Rio de Janeiro</option>
+            <option>Espírito</option>
+            <option selected>Santa Catarina</option>
+        </select>
+    </fieldset>
+        <input 
+        type="submit" 
+        value="entrar"
+        class="botao"
+      >
+      <input 
+      type="submit" 
+      value="limpar"
+      class="botao"
+    >
+</body>
+</html>
